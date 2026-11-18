@@ -1,0 +1,13 @@
+<View>
+  <Header value="按时间轴为事件打上起止时间和标签，一段视频可有多段事件"/>
+  <Video name="video" value="$video"/>
+  <Labels name="event" toName="video">
+    <Label value="开箱" background="#5B8FF9"/>
+    <Label value="口播讲解" background="#5AD8A6"/>
+    <Label value="产品特写" background="#F6BD16"/>
+    <Label value="使用演示" background="#E8684A"/>
+    <Label value="其他" background="#9270CA"/>
+  </Labels>
+  <Header value="疑难说明（可选）"/>
+  <TextArea name="note" toName="video" rows="2" maxSubmissions="1" placeholder="用了「其他」时写一句原因"/>
+</View>

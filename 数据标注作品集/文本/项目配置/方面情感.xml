@@ -1,0 +1,27 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Header value="只给实际提到的方面打极性；没提到的选「未提及」"/>
+  <Header value="产品"/>
+  <Choices name="product_polarity" toName="text" choice="single" showInline="true">
+    <Choice value="正"/>
+    <Choice value="负"/>
+    <Choice value="中"/>
+    <Choice value="未提及"/>
+  </Choices>
+  <Header value="物流"/>
+  <Choices name="logistics_polarity" toName="text" choice="single" showInline="true">
+    <Choice value="正"/>
+    <Choice value="负"/>
+    <Choice value="中"/>
+    <Choice value="未提及"/>
+  </Choices>
+  <Header value="客服"/>
+  <Choices name="service_polarity" toName="text" choice="single" showInline="true">
+    <Choice value="正"/>
+    <Choice value="负"/>
+    <Choice value="中"/>
+    <Choice value="未提及"/>
+  </Choices>
+  <Header value="疑难说明（可选）"/>
+  <TextArea name="note" toName="text" rows="2" maxSubmissions="1" placeholder="例如包装算物流还是产品"/>
+</View>

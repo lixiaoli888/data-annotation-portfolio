@@ -1,0 +1,14 @@
+<View>
+  <Header value="先转写听到的内容，再标整体情感。听不清写「[听不清]」，不要猜。"/>
+  <Audio name="audio" value="$audio"/>
+  <Header value="转写"/>
+  <TextArea name="transcription" toName="audio" rows="4" maxSubmissions="1" placeholder="按实际听到的口播或对话写，保留口语"/>
+  <Header value="情感（单选）"/>
+  <Choices name="sentiment" toName="audio" choice="single" showInline="true">
+    <Choice value="Positive"/>
+    <Choice value="Negative"/>
+    <Choice value="Neutral"/>
+  </Choices>
+  <Header value="疑难说明（可选）"/>
+  <TextArea name="note" toName="audio" rows="2" maxSubmissions="1"/>
+</View>

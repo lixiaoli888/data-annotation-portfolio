@@ -1,0 +1,12 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Labels name="label" toName="text">
+    <Label value="品牌" background="#5B8FF9"/>
+    <Label value="系列名" background="#5AD8A6"/>
+    <Label value="产品名" background="#F6BD16"/>
+    <Label value="规格" background="#E8684A"/>
+    <Label value="材质" background="#9270CA"/>
+  </Labels>
+  <Header value="疑难说明（可选）"/>
+  <TextArea name="note" toName="text" rows="2" maxSubmissions="1" placeholder="切分拿不准时写一句"/>
+</View>
