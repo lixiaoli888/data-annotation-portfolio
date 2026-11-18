@@ -1,0 +1,14 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Header value="客户意图（可多选）"/>
+  <Choices name="intent" toName="text" choice="multiple" showInline="true">
+    <Choice value="咨询规格/功能"/>
+    <Choice value="对比推荐"/>
+    <Choice value="活动/库存查询"/>
+    <Choice value="投诉/质量问题"/>
+    <Choice value="换货/退货"/>
+    <Choice value="使用反馈"/>
+  </Choices>
+  <Header value="主意图或疑难说明（可选）"/>
+  <TextArea name="note" toName="text" rows="2" maxSubmissions="1" placeholder="多意图时可注明主意图"/>
+</View>

@@ -1,0 +1,11 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Header value="整体情感（单选）"/>
+  <Choices name="sentiment" toName="text" choice="single" showInline="true">
+    <Choice value="Positive"/>
+    <Choice value="Negative"/>
+    <Choice value="Neutral"/>
+  </Choices>
+  <Header value="疑难说明（可选）"/>
+  <TextArea name="note" toName="text" rows="2" maxSubmissions="1" placeholder="为什么这样标"/>
+</View>
